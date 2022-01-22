@@ -4,7 +4,7 @@ var http = require('http').createServer(app);
 const bodyparser = require("body-parser")
 const io = require('socket.io')(http, {
     cors: {
-        origin: "http://26.116.165.221:3000",
+        origin: "http://locahost:3000",
         methods: ["GET", "POST"],
         transports: ['websocket', 'polling'],
         credentials: true
